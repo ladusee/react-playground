@@ -2,10 +2,13 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./app";
 import "./main.css";
+import { Providers } from "./providers";
 
 const jsx = (
 	<StrictMode>
-		<App />
+		<Providers>
+			<App />
+		</Providers>
 	</StrictMode>
 );
 
